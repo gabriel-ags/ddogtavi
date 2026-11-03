@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DDOGTAVI Uploader – Instagram login</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>Instagram login</h1><p id="m">Returning to the DDOGTAVI Uploader on this computer…</p>
+<script>
+// Forwards the OAuth result to the uploader's local listener. The code is useless without the app secret, which never leaves the owner's PC.
+var q = location.search;
+if (q) { location.replace('http://127.0.0.1:8725/callback' + q); }
+else { document.getElementById('m').textContent = 'No login data received.'; }
+</script>
+<footer><a href="./">Daily Dose of GTA VI</a> · <a href="privacy.html">Privacy Policy</a></footer></main></body></html>
