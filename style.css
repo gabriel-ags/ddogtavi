@@ -1,8 +1,22 @@
-:root{--bg:#0b0716;--fg:#f5f0ff;--muted:#b9a9d6;--pink:#ff2e88;--cyan:#22d3ee}
+:root{--bg:#0b0716;--fg:#f5f0ff;--muted:#b9a9d6;--pink:#ff2e88;--cyan:#22d3ee;--card:#160d29}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:48px 16px 80px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 8px;background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
-h2{font-size:1.15rem;margin:32px 0 6px;color:var(--cyan)}a{color:var(--pink)}p.meta{color:var(--muted);margin:0 0 24px}
-nav{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:32px}footer{margin-top:48px;color:var(--muted);font-size:.9rem}
-
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+h1{font-size:2.2rem;line-height:1.2;margin:0 0 8px;background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:1.25rem;margin:40px 0 8px;color:var(--cyan)}h3{margin:0 0 4px;font-size:1.05rem}
+a{color:var(--pink)}p.meta{color:var(--muted);margin:0 0 20px;font-size:1.05rem}
+nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:32px}
+nav .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--fg);text-decoration:none;margin-right:auto}
+nav .brand img{border-radius:6px}
+.hero{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hero img{border-radius:28px;box-shadow:0 0 40px rgba(255,46,136,.35);max-width:100%;height:auto}
+.hero div{flex:1;min-width:240px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--pink);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid var(--cyan);color:var(--cyan)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.grid article{background:var(--card);border:1px solid #2a1d47;border-radius:14px;padding:16px}
+.grid article p{margin:0;color:var(--muted)}
+ul.links,ol{padding-left:22px}
+footer{margin-top:56px;color:var(--muted);font-size:.9rem;border-top:1px solid #2a1d47;padding-top:16px}
 .badge{border:1px solid currentColor;border-radius:10px;padding:10px 14px;display:inline-block}
+code{background:var(--card);padding:1px 6px;border-radius:6px}
