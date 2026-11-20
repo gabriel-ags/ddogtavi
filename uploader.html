@@ -31,8 +31,8 @@
 <section>
 <h2>How it works</h2>
 <ol>
-<li><b>Sign in once.</b> The owner connects their own account with the platform's official login: Google OAuth for YouTube, Login Kit for TikTok (desktop redirect with PKCE) and Meta login for Instagram.</li>
-<li><b>Check the account.</b> The posting page shows the connected account's display name and avatar (TikTok <code>user.info.basic</code>), so the owner always sees which account will post.</li>
+<li><b>Sign in once.</b> The owner connects their own account with the platform's official login: Google OAuth for YouTube, Login Kit for TikTok (started on <a href="tiktok/">this site</a>, which returns to <code>tiktok/callback.html</code>) and Meta login for Instagram.</li>
+<li><b>Check the account.</b> The posting page (<a href="tiktok/">gabriel-ags.github.io/ddogtavi/tiktok/</a>) shows the connected account's display name and avatar (TikTok <code>user.info.basic</code>), so the owner always sees which account will post.</li>
 <li><b>Review the video.</b> The owner picks a finished video, sees a preview and edits the caption.</li>
 <li><b>Choose the settings.</b> Privacy level (no default; only the options TikTok returns for the account), comments, Duet and Stitch on or off, and commercial content disclosure. The owner must accept TikTok's Music Usage Confirmation.</li>
 <li><b>Post.</b> After the owner clicks Post, the tool uploads the video (TikTok Content Posting API, <code>video.publish</code>) and shows the publish status until the post is live.</li>
