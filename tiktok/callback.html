@@ -36,6 +36,13 @@ const fail = (msg) => { document.getElementById('t').textContent = 'Login not co
     document.getElementById('m').textContent = 'Taking you back to the uploader…';
     setTimeout(() => location.replace('./?connected=1'), 1200);
   } catch {
+    let saved = null;
+    try { saved = sessionStorage.getItem('ddog_state'); } catch {}
+    if (saved && saved === q.get('state')) {
+      document.getElementById('t').textContent = 'Logged in with TikTok ✅';
+      document.getElementById('m').innerHTML = 'TikTok confirmed the login. To finish connecting and post videos, start the DDOGTAVI Uploader on the owner&#39;s computer. <a href="./">Back to the uploader</a>';
+      return;
+    }
     fail('The DDOGTAVI Uploader is not running on this computer.');
   }
 })();
