@@ -113,7 +113,7 @@
 </main>
 <footer style="max-width:1100px;margin:0 auto;padding:0 16px 32px;color:#b9a8d6;font-size:13px">DDOGTAVI Uploader · used only by the owner of Daily Dose of GTA VI · <a style="color:#22d3ee" href="../uploader.html">About</a> · <a style="color:#22d3ee" href="../privacy.html">Privacy Policy</a> · <a style="color:#22d3ee" href="../terms.html">Terms of Service</a></footer>
 
-<script>window.DDOG_LOGIN = () => { const s = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join(''); try { sessionStorage.setItem('ddog_state', s); } catch {} location.href = "https://www.tiktok.com/v2/auth/authorize/?client_key=sbawvpjc3c0dkcxjxp&scope=user.info.basic%2Cvideo.publish%2Cuser.info.stats%2Cvideo.list&response_type=code&redirect_uri=https%3A%2F%2Fgabriel-ags.github.io%2Fddogtavi%2Ftiktok%2Fcallback.html&state=__STATE__".replace('__STATE__', s); };</script>
+<script>window.DDOG_LOGIN = () => { const s = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, '0')).join(''); try { sessionStorage.setItem('ddog_state', s); } catch {} location.href = "https://www.tiktok.com/v2/auth/authorize/?client_key=sbawvpjc3c0dkcxjxp&scope=user.info.basic%2Cvideo.publish%2Cvideo.upload&response_type=code&redirect_uri=https%3A%2F%2Fgabriel-ags.github.io%2Fddogtavi%2Ftiktok%2Fcallback.html&state=__STATE__".replace('__STATE__', s); };</script>
 <script>window.DDOG_API = 'http://127.0.0.1:8724';</script>
 <script>
 // API: '' = lokal (127.0.0.1:8724), auf der Website setzt window.DDOG_API den lokalen Helfer (20.11., TikTok-Prüfung)
