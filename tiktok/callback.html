@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DDOGTAVI Uploader · Connecting TikTok</title>
+<title>Daily Dose Uploader · Connecting TikTok</title>
 <link rel="icon" href="../favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="../img/icon-32.png"><link rel="apple-touch-icon" href="../img/icon-180.png">
 <style>
   body { margin: 0; min-height: 100vh; display: grid; place-items: center; color: #f5f0ff; font: 16px/1.5 system-ui, "Segoe UI", sans-serif;
@@ -16,7 +16,7 @@
 <body>
 <div class="card">
   <h1 id="t">Connecting your TikTok account…</h1>
-  <p id="m">Finishing the login with the DDOGTAVI Uploader on this computer.</p>
+  <p id="m">Finishing the login with the Daily Dose Uploader on this computer.</p>
 </div>
 <script>
 // TikTok leitet mit ?code&state hierher zurück. Der Code wird an den lokalen Helfer gegeben, der ihn (mit dem
@@ -40,10 +40,10 @@ const fail = (msg) => { document.getElementById('t').textContent = 'Login not co
     try { saved = sessionStorage.getItem('ddog_state'); } catch {}
     if (saved && saved === q.get('state')) {
       document.getElementById('t').textContent = 'Logged in with TikTok ✅';
-      document.getElementById('m').innerHTML = 'TikTok confirmed the login. To finish connecting and post videos, start the DDOGTAVI Uploader on the owner&#39;s computer. <a href="./">Back to the uploader</a>';
+      document.getElementById('m').innerHTML = 'TikTok confirmed the login. To finish connecting and post videos, start the Daily Dose Uploader on the owner&#39;s computer. <a href="./">Back to the uploader</a>';
       return;
     }
-    fail('The DDOGTAVI Uploader is not running on this computer.');
+    fail('The Daily Dose Uploader is not running on this computer.');
   }
 })();
 </script>
